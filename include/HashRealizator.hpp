@@ -27,7 +27,6 @@ class JsonPrinter {
                std::time_t timestamp);
   friend std::ostream& operator<<(std::ostream&, const JsonPrinter&);
   json GetJson() const { return J_Arr; };
-  std::mutex& GetMut() const { return mut; };
 
  private:
   json J_Arr;
